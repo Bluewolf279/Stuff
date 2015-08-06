@@ -1,2 +1,2 @@
 # Stuff
-This is me playing around with java
+This is me playing around and learning with java
