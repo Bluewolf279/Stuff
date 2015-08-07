@@ -24,7 +24,7 @@ public class baseFunctions {
                 List<String> subtext = new ArrayList<String>();
                 int index = 0;
                 while (index < text.length()) {
-                    subtext.add(text.substring(index, Math.min(index + charPerline,text.length())));
+                    subtext.add(text.s  ubstring(index, Math.min(index + charPerline,text.length())));
                     index += charPerline;
                 }
                 writer.write(subtext.get(0));
