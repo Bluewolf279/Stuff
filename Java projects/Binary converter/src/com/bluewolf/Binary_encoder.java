@@ -9,7 +9,7 @@ import java.util.Objects;
  * Class use: This is the Binary encoder and decoder file
  */
 public class Binary_encoder {
-    public String bEncoder(String text){
+    public static String bEncoder(String text){
         String[] split = text.split("");
         String out ="";
         for (int i = 0;split.length > i;i++){
