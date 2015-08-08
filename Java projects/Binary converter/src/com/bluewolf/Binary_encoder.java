@@ -169,6 +169,9 @@ public class Binary_encoder {
             else if (Objects.equals(split[i], "z")){
                 out+="01111010";
             }
+            else if (Objects.equals(split[i], " ")){
+                out+="10100000";
+            }
             else if (Objects.equals(split[i], "")){
                 out+="";
             }

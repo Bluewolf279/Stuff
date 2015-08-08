@@ -40,7 +40,7 @@ public class baseFunctions {
         return strings;
     }
 
-    public void printFile(String text, String fileName,int charPerline) {
+    public static void printFile(String text, String fileName,int charPerline) {
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream(fileName+ ".txt"), "utf-8"))) {
             if (text.length() > charPerline) {
@@ -48,7 +48,7 @@ public class baseFunctions {
                 List<String> subtext = new ArrayList<String>();
                 int index = 0;
                 while (index < text.length()) {
-                    subtext.add(text.s  ubstring(index, Math.min(index + charPerline,text.length())));
+                    subtext.add(text.substring(index, Math.min(index + charPerline,text.length())));
                     index += charPerline;
                 }
                 writer.write(subtext.get(0));
