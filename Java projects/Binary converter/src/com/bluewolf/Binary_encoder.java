@@ -181,7 +181,7 @@ public class Binary_encoder {
         }
         return out;
     }
-    public static String fromBinary(String code) {
+    public static String bDecoder(String code) {
         String text ="";
         List<String> subtext = new ArrayList<>();
         int index = 0;
